@@ -46,20 +46,35 @@ const ZeitLogo = styled(SmallLogo)`
     margin-left: 8px;
 `;
 
-const moveSlowly = {x: 3, y: 3};
+const moveSlowly = {
+    x: 3,
+    y: 3
+};
 const transition = {
-    yoyo: Infinity,
     duration: 2,
-    ease: 'easeInOut'
+    ease: 'easeInOut',
+    yoyo: Infinity
 };
 
 const LogosSection = () => (
     <Logos>
         <div>
-            <motion.div animate={moveSlowly} transition={{...transition, delay: 1}}>
+            <motion.div
+                animate={moveSlowly}
+                transition={{
+                    ...transition,
+                    delay: 1
+                }}
+            >
                 <SmallLogo src="/static/images/html.svg" />
             </motion.div>
-            <motion.div animate={moveSlowly} transition={{...transition, delay: 0.5}}>
+            <motion.div
+                animate={moveSlowly}
+                transition={{
+                    ...transition,
+                    delay: 0.5
+                }}
+            >
                 <ZeitLogo src="/static/images/zeit.svg" />
             </motion.div>
         </div>
@@ -67,10 +82,22 @@ const LogosSection = () => (
             <NextLogo src="/static/images/next.svg" />
         </motion.div>
         <div>
-            <motion.div animate={moveSlowly} transition={{...transition, delay: 1.5}}>
+            <motion.div
+                animate={moveSlowly}
+                transition={{
+                    ...transition,
+                    delay: 1.5
+                }}
+            >
                 <JsLogo src="/static/images/js.svg" />
             </motion.div>
-            <motion.div animate={moveSlowly} transition={{...transition, delay: 2}}>
+            <motion.div
+                animate={moveSlowly}
+                transition={{
+                    ...transition,
+                    delay: 2
+                }}
+            >
                 <SmallLogo src="/static/images/react.svg" />
             </motion.div>
         </div>

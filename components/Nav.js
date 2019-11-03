@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {colors} from '../styles/vars';
+
 import Link from './link';
-import {color} from './styles';
 
 const StyledNav = styled.nav`
     padding: 25px;
@@ -17,14 +18,14 @@ const StyledNav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-    color: ${color.primary};
+    color: ${colors.accent};
     font-size: 0.8em;
     letter-spacing: 0.03em;
     text-decoration: none;
     transition: all 0.15s ease;
 
     :hover {
-        color: ${color.primary};
+        color: ${colors.text};
     }
 
     @media (min-width: 737px) {
