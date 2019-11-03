@@ -5,7 +5,6 @@ export const Title = styled.h1`
     font-weight: 800;
     font-size: 48px;
     line-height: 1;
-    color: #4b4444;
     margin-bottom: 24px;
 
     @media screen and (min-width: 1000px) {
@@ -14,10 +13,6 @@ export const Title = styled.h1`
 
     p {
         margin: 0;
-    }
-
-    span {
-        color: black;
     }
 `;
 

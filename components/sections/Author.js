@@ -22,11 +22,6 @@ const MeetTheAuthor = styled(Small)`
     margin-bottom: 40px;
 `;
 
-const Email = styled.a`
-    color: black;
-    text-decoration: none;
-`;
-
 const AuthorSection = () => (
     <Section>
         <Container>
@@ -41,7 +36,9 @@ const AuthorSection = () => (
                 </Description>
                 <Description>
                     {"If you're still not sure if this is for you, feel free to "}
-                    <Email href="mailto:me@leerob.io">{'email me'}</Email>
+                    <A href="mailto:me@leerob.io" underline>
+                        {'email me'}
+                    </A>
                     {' and ask.'}
                 </Description>
                 <FeatureList>

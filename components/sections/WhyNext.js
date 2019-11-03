@@ -133,7 +133,7 @@ const WhyNextSection = () => {
                                 {'Jam-Packed Lessons'}
                             </Bullet>
                             <BulletDescription>
-                                {'Pre-order now and get the first introduction module delivered immediately.'}
+                                {`Pre-order now to get project updates, early previews, and be the first to know when it's ready.`}
                             </BulletDescription>
                         </motion.li>
                     </MotionList>
