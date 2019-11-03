@@ -7,7 +7,7 @@ export const Title = styled.h1`
     line-height: 1;
     margin-bottom: 24px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1272px) {
         font-size: 60px;
     }
 
@@ -44,6 +44,7 @@ export const Container = styled.div`
 export const Column = styled.div`
     margin: 0 24px;
     width: inherit;
+    min-width: 342px;
 
     @media screen and (min-width: 1000px) {
         width: 50%;
