@@ -12,7 +12,7 @@ const Index = () => (
         description={
             'The premiere video course for building production, server-side rendered applications with Next.js and React.'
         }
-        image={'/static/images/banner.jpg'}
+        image={'/static/images/banner.png'}
         title={'Mastering Next.js'}
     >
         <main>
