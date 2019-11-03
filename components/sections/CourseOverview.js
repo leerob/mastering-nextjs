@@ -41,7 +41,6 @@ const CourseOverviewSection = () => (
         </Title>
         <ModuleList>
             <Module
-                title="Introduction"
                 lessons={[
                     'Why Next.js?',
                     'Fundamentals of Next',
@@ -51,9 +50,9 @@ const CourseOverviewSection = () => (
                     'Code splitting',
                     'Next vs. Create React App vs. Gatsby'
                 ]}
+                title="Introduction"
             />
             <Module
-                title="React Overview"
                 lessons={[
                     'Classes vs Functional Components',
                     'Props & State',
@@ -61,17 +60,17 @@ const CourseOverviewSection = () => (
                     'ES6',
                     'JSX'
                 ]}
+                title="React Overview"
             />
             <Module
-                title="Developing Locally"
                 lessons={['Installing Nextjs', 'Running locally', 'Linting', 'Formatting']}
+                title="Developing Locally"
             />
             <Module
-                title="Navigating Between Pages"
                 lessons={['Link (client-side routing)', 'withRouter', 'getInitialProps', 'Retrieving data from URLs']}
+                title="Navigating Between Pages"
             />
             <Module
-                title="Styling"
                 lessons={[
                     'CSS (Importing & Using)',
                     'Sass',
@@ -79,10 +78,10 @@ const CourseOverviewSection = () => (
                     'Styled-Components',
                     'Responsive + Mobile-First Design'
                 ]}
+                title="Styling"
             />
-            <Module title="Fetching Data" lessons={['Node.js & API Routes', 'Custom Server', 'GraphQL', 'CMS']} />
+            <Module lessons={['Node.js & API Routes', 'Custom Server', 'GraphQL', 'CMS']} title="Fetching Data" />
             <Module
-                title="Managing Assets and SEO"
                 lessons={[
                     'Static Assets',
                     'Public Files',
@@ -90,9 +89,9 @@ const CourseOverviewSection = () => (
                     'Custom _document.js',
                     'Open Graph (OG) tags'
                 ]}
+                title="Managing Assets and SEO"
             />
             <Module
-                title="Building A Blog With MDX"
                 lessons={[
                     'MDX vs CMS',
                     'Initial Setup',
@@ -100,13 +99,13 @@ const CourseOverviewSection = () => (
                     'Building Forms',
                     'Using a Component Library'
                 ]}
+                title="Building A Blog With MDX"
             />
             <Module
-                title="Authentication"
                 lessons={['What is a JWT?', 'Auth0', 'Passport.js', 'Login & Signup Pages']}
+                title="Authentication"
             />
             <Module
-                title="Testing & Error Handling"
                 lessons={[
                     'Unit test vs Integration test',
                     'Jest Snapshot Testing',
@@ -114,14 +113,15 @@ const CourseOverviewSection = () => (
                     'Sentry Plugin',
                     'Custom Error Page (_error.js)'
                 ]}
+                title="Testing & Error Handling"
             />
             <Module
-                title="State Management & More"
                 lessons={['Redux', 'React Context', 'Adding TypeScript', 'Dynamic Imports']}
+                title="State Management & More"
             />
             <Module
-                title="Exporting & Deployment"
                 lessons={['Static Pre-Rendering', 'Serverless Functions', 'Zeit Now', 'Netlify']}
+                title="Exporting & Deployment"
             />
         </ModuleList>
     </Section>

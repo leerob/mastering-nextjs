@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${colors.text};
     }
 
-    b {
+    strong {
         font-weight: 700;
     }
 

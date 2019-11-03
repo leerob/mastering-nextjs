@@ -41,24 +41,30 @@ const BulletDescription = styled.div`
 `;
 
 const list = {
-    visible: {
-        opacity: 1,
-        transition: {
-            when: 'beforeChildren',
-            staggerChildren: 0.3
-        }
-    },
     hidden: {
         opacity: 0,
         transition: {
             when: 'afterChildren'
         }
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3,
+            when: 'beforeChildren'
+        }
     }
 };
 
 const item = {
-    visible: {opacity: 1, x: 0},
-    hidden: {opacity: 0, x: -100}
+    hidden: {
+        opacity: 0,
+        x: -100
+    },
+    visible: {
+        opacity: 1,
+        x: 0
+    }
 };
 
 const WhyNextSection = () => {
@@ -98,7 +104,7 @@ const WhyNextSection = () => {
                 </Column>
                 <CenteredColumn>
                     <Small>{'In this course'}</Small>
-                    <MotionList initial="hidden" animate={inView && 'visible'} variants={list}>
+                    <MotionList animate={inView && 'visible'} initial="hidden" variants={list}>
                         <motion.li variants={item}>
                             <Bullet>
                                 <span>{'2'}</span>

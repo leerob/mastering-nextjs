@@ -43,11 +43,17 @@ const HeroSection = () => (
                 <Column>
                     <Underlined>{'Coming Soon'}</Underlined>
                     <motion.div
-                        initial="hidden"
                         animate="visible"
+                        initial="hidden"
                         variants={{
-                            visible: {opacity: 1, y: 0},
-                            hidden: {opacity: 0, y: -100}
+                            hidden: {
+                                opacity: 0,
+                                y: -100
+                            },
+                            visible: {
+                                opacity: 1,
+                                y: 0
+                            }
                         }}
                     >
                         <Title>

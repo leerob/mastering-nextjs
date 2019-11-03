@@ -61,7 +61,7 @@ const Subscribe = () => (
         <P>{"Sign up for project updates, early previews, and to find out when it's ready."}</P>
         <Form>
             <Input aria-label="Email Address" name="email" placeholder="Enter your email" type="text" />
-            <Button whileHover={{scale: 1.05}} whileTap={{scale: 0.9}} type="submit">
+            <Button type="submit" whileHover={{scale: 1.05}} whileTap={{scale: 0.9}}>
                 {'Subscribe'}
             </Button>
         </Form>

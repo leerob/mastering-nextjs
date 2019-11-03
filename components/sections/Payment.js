@@ -101,7 +101,7 @@ const PaymentSection = () => (
                 <li>
                     <Check src="/static/images/check.svg" />
                     <p>
-                        <b>{'All 55'}</b>
+                        <strong>{'All 55'}</strong>
                         {' jam-packed lessons'}
                     </p>
                 </li>
@@ -109,14 +109,14 @@ const PaymentSection = () => (
                     <Check src="/static/images/check.svg" />
                     <p>
                         {'Access to the '}
-                        <b>{'entire source code'}</b>
+                        <strong>{'entire source code'}</strong>
                         {' for both applications'}
                     </p>
                 </li>
                 <li>
                     <Check src="/static/images/check.svg" />
                     <p>
-                        <b>{'Lifetime access'}</b>
+                        <strong>{'Lifetime access'}</strong>
                         {' to all content'}
                     </p>
                 </li>
