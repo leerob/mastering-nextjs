@@ -1,5 +1,5 @@
 export const colors = {
-    accent: '#2ec7c0',
+    accent: '#0967d2',
     background: '#0a6159',
     border: '#dcdcdc',
     grey: {

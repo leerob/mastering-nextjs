@@ -1,0 +1,23 @@
+import Date from '../../components/date'
+import Post from '../../components/post'
+import Link from '../../components/link'
+
+export const meta = {
+date: '2019-11-05',
+description: 'TODO',
+image: '/static/images/learn-next-js/banner.jpg',
+slug: 'learn-next-js',
+title: 'Why Should I Learn Next.js?'
+}
+
+export default ({children}) => <Post meta={meta}>{children}</Post>
+
+# Why Should I Learn Next.js?
+
+<Date>{meta.date}</Date>
+
+![Next.js Trend](/static/images/learn-next-js/nextjs-trend.png)
+
+![React.js Trend](/static/images/learn-next-js/react-trend.png)
+
+![NPM Install Trend](/static/images/learn-next-js/npm-trend.png)
