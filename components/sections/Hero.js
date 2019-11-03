@@ -61,7 +61,7 @@ const HeroSection = () => (
                             <span>{'Next.js Guide'}</span>
                         </Title>
                     </motion.div>
-                    <Description>
+                    <Description as="h2">
                         {
                             'The premiere video course for building production, server-side rendered applications with Next.js and React.'
                         }

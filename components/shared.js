@@ -24,7 +24,7 @@ export const Small = styled.p`
     text-transform: uppercase;
 `;
 
-export const Description = styled.h2`
+export const Description = styled.p`
     font-weight: 300;
     font-size: 20px;
     color: #000000;

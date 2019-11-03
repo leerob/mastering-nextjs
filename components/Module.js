@@ -28,7 +28,7 @@ const Lesson = styled.li`
         margin-right: 8px;
     }
 
-    span {
+    h6 {
         margin-bottom: 8px;
     }
 `;
@@ -44,7 +44,7 @@ const Module = ({title, lessons}) => (
                 return (
                     <Lesson key={lesson}>
                         <img alt="arrow" src="/static/images/arrow.svg" />
-                        <span>{lesson}</span>
+                        <h6>{lesson}</h6>
                     </Lesson>
                 );
             })}

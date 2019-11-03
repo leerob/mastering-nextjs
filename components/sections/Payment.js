@@ -103,14 +103,14 @@ const PaymentSection = () => (
             </PriceContainer>
             <Features>
                 <li>
-                    <Check src="/static/images/check.svg" />
+                    <Check alt="Checkmark" src="/static/images/check.svg" />
                     <p>
                         <strong>{'All 55'}</strong>
                         {' jam-packed lessons'}
                     </p>
                 </li>
                 <li>
-                    <Check src="/static/images/check.svg" />
+                    <Check alt="Checkmark" src="/static/images/check.svg" />
                     <p>
                         {'Access to the '}
                         <strong>{'entire source code'}</strong>
@@ -118,7 +118,7 @@ const PaymentSection = () => (
                     </p>
                 </li>
                 <li>
-                    <Check src="/static/images/check.svg" />
+                    <Check alt="Checkmark" src="/static/images/check.svg" />
                     <p>
                         <strong>{'Lifetime access'}</strong>
                         {' to all content'}
