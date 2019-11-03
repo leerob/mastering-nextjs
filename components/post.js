@@ -46,9 +46,9 @@ const Main = styled.main`
     }
 `;
 
-const editUrl = (slug) => `https://github.com/leerob/mastering-nextjs/edit/master/pages/blog/${slug}.mdx`;
+const editUrl = (slug) => `https://github.com/leerob/mastering-nextjs/edit/master/pages/${slug}.mdx`;
 const discussUrl = (slug) =>
-    `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://masteringnextjs.com/blog/${slug}`)}`;
+    `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://masteringnextjs.com/${slug}`)}`;
 
 const Post = ({children, meta}) => (
     <Page date={meta.date} description={meta.description} image={meta.image} title={`${meta.title} - Lee Robinson`}>
