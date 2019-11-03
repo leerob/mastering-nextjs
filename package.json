@@ -1,0 +1,110 @@
+{
+    "name": "mastering-nextjs",
+    "description": "The complete video course on Next.js.",
+    "version": "0.0.0",
+    "author": {
+        "name": "Lee Robinson",
+        "email": "me@leerob.io",
+        "url": "https://leerob.io"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leerob/mastering-nextjs.git"
+    },
+    "engines": {
+        "node": ">=10.15.0",
+        "yarn": ">=1.5.1"
+    },
+    "files": [
+        "components",
+        "lib",
+        "data",
+        "icons",
+        "pages",
+        "static",
+        "styles",
+        "utils"
+    ],
+    "scripts": {
+        "analyze": "cross-env ANALYZE=true next build",
+        "build": "cross-env NODE_ENV=production next build",
+        "dev": "next",
+        "export": "node scripts/export.js",
+        "imageoptim": "yarn imageoptim:gif && yarn imageoptim:jpg && yarn imageoptim:png",
+        "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
+        "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
+        "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
+        "lint": "eslint . --ext .json --ext .js",
+        "now-build": "yarn build && yarn export",
+        "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\"",
+        "start": "cross-env NODE_ENV=production next start",
+        "test": "yarn lint"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{html,js,json,md,mdx,mjs,yml}": [
+            "prettier --write",
+            "git add"
+        ],
+        "*.gif": [
+            "imageoptim",
+            "git add"
+        ],
+        "*.jpg": [
+            "imageoptim",
+            "git add"
+        ],
+        "*.png": [
+            "imageoptim --no-imageoptim --imagealpha",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "@mapbox/rehype-prism": "0.3.1",
+        "@mdx-js/mdx": "1.0.27",
+        "@mdx-js/tag": "0.20.3",
+        "comma-number": "2.0.1",
+        "date-fns": "1.30.1",
+        "framer-motion": "1.6.15",
+        "isomorphic-unfetch": "3.0.0",
+        "next": "8.1.0",
+        "next-ga": "2.3.4",
+        "react": "16.8.6",
+        "react-dom": "16.8.6",
+        "react-intersection-observer": "8.25.1",
+        "react-syntax-highlighter": "11.0.1",
+        "styled-components": "4.3.2",
+        "styled-reset": "3.0.0",
+        "title": "3.4.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.4",
+        "@zeit/next-css": "1.0.1",
+        "@zeit/next-mdx": "1.2.0",
+        "babel-plugin-inline-react-svg": "1.1.0",
+        "babel-plugin-styled-components": "1.10.6",
+        "cpy": "7.3.0",
+        "cross-env": "5.2.0",
+        "del": "5.0.0",
+        "eslint": "4.19.1",
+        "eslint-config-get-off-my-lawn-prettier": "1.0.0",
+        "execa": "2.0.3",
+        "execa-output": "2.0.0",
+        "globby": "10.0.1",
+        "husky": "3.0.0",
+        "imageoptim-cli": "2.3.7",
+        "lint-staged": "8.2.1",
+        "listr": "0.14.3",
+        "prettier": "1.18.2",
+        "prettify-xml": "1.2.0",
+        "webpack-bundle-analyzer": "3.3.2"
+    },
+    "resolutions": {
+        "@mdx-js/mdx": "^0.16.0"
+    }
+}
