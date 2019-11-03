@@ -4,6 +4,7 @@ import {useInView} from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 
 import {Container, Column, CenteredColumn, Title, Description, Small, CheckIcon, FeatureList, Feature} from '../shared';
+import A from '../elements/a';
 
 const Section = styled.section`
     background-color: #f7f7f7;
@@ -14,7 +15,7 @@ const Section = styled.section`
     }
 `;
 
-const Bullet = styled.h5`
+const Bullet = styled.h4`
     font-weight: 800;
     font-size: 24px;
     line-height: 1;
@@ -67,13 +68,17 @@ const WhyNextSection = () => {
         <Section id="why">
             <Container>
                 <Column>
-                    <Title>
+                    <Title as="h3">
                         <p>{'Why'}</p>
                         <span>{'Next.js?'}</span>
                     </Title>
                     <Description>
+                        {'Companies all over the world are using '}
+                        <A href="https://nextjs.org/" underline>
+                            {'Next.js'}
+                        </A>
                         {
-                            'Companies all over the world are using Next.js to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications.'
+                            ' to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications.'
                         }
                     </Description>
                     <FeatureList ref={ref}>

@@ -31,7 +31,7 @@ const Page = ({children, date, description, image, title = 'Mastering Next.js', 
                 <link href="/static/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
                 <link href="/static/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
                 <link href="/static/favicons/site.webmanifest" rel="manifest" />
-                <link color="#4a9885" href="/static/favicons/safari-pinned-tab.svg" rel="mask-icon" />
+                <link color="#5bbad5" href="/static/favicons/safari-pinned-tab.svg" rel="mask-icon" />
                 <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
                 <link
                     href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap"

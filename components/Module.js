@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Title = styled.h5`
+const Title = styled.h4`
     display: flex;
     align-items: center;
     font-size: 24px;

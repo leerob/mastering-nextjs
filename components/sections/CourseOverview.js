@@ -36,7 +36,7 @@ const ModuleList = styled.div`
 
 const CourseOverviewSection = () => (
     <Section id="overview">
-        <Title>
+        <Title as="h3">
             <span>{'Course Overview'}</span>
         </Title>
         <ModuleList>

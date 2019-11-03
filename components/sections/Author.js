@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {useInView} from 'react-intersection-observer';
 
 import {Container, Column, CenteredColumn, Title, Description, Small, Feature, FeatureList, CheckIcon} from '../shared';
+import A from '../elements/a';
 
 const Section = styled.section`
     background-color: #f7f7f7;
@@ -55,7 +56,7 @@ const AuthorSection = () => {
         <Section>
             <Container>
                 <Column ref={ref}>
-                    <Title>
+                    <Title as="h3">
                         <span>{'Who Is This For?'}</span>
                     </Title>
                     <Description>
@@ -87,8 +88,11 @@ const AuthorSection = () => {
                     <AuthorImage src="/static/images/lee.jpg" />
                     <MeetTheAuthor>{'Meet The Author'}</MeetTheAuthor>
                     <Description>
+                        <A href="https://leerob.io" underline>
+                            {'Lee Robinson'}
+                        </A>
                         {
-                            'Lee Robinson is a full-stack developer, writer, and creator from the Midwest. He’s used React & Next.js extensively in his professional career and for freelance clients.'
+                            ' is a full-stack developer, writer, and creator from the Midwest. He’s used React & Next.js extensively in his professional career and for freelance clients.'
                         }
                     </Description>
                     <Description>
