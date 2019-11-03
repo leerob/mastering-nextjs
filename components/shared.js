@@ -44,7 +44,11 @@ export const Container = styled.div`
 export const Column = styled.div`
     margin: 0 24px;
     width: inherit;
-    min-width: 342px;
+    min-width: inherit;
+
+    @media screen and (min-width: 500px) {
+        min-width: 342px;
+    }
 
     @media screen and (min-width: 1000px) {
         width: 50%;
