@@ -5,7 +5,9 @@ import {heading} from '../../styles/mixins';
 import titleStyle from '../../utils/title-style';
 
 const StyledH1 = styled.h1`
-    ${heading} font-size: 32px;
+    ${heading};
+    font-size: 32px;
+    font-weight: 800;
     margin: 0;
     line-height: 1.35;
 

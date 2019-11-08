@@ -20,7 +20,6 @@ const StyledNav = styled.nav`
 const NavLink = styled(Link)`
     color: ${colors.accent};
     font-size: 0.8em;
-    letter-spacing: 0.03em;
     text-decoration: none;
     transition: all 0.15s ease;
 
@@ -36,7 +35,7 @@ const NavLink = styled(Link)`
         margin: 0 0 0 2em;
 
         @media (min-width: 737px) {
-            margin: 0 0 0 3em;
+            margin: 0 0 0 2em;
         }
     }
 `;
