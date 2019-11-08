@@ -43,6 +43,7 @@ const Page = ({children, date, description, image, title = 'Mastering Next.js', 
                 <meta content={formattedTitle} property="og:title" />
                 <meta content={description} property="og:description" />
                 <meta content={canonical} property="og:url" />
+                <meta content="5e41b2275db646a5" name="yandex-verification" />
                 <meta content="t28Kl2fGmZjIEgh6q3mGsf-7gGb8115VMQm1qbMMIKc" name="google-site-verification" />
                 {featuredImage && (
                     <>
