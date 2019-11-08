@@ -3,9 +3,13 @@ import {motion} from 'framer-motion';
 
 export const Title = styled.h1`
     font-weight: 800;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 520px) {
+        font-size: 48px;
+    }
 
     @media screen and (min-width: 1272px) {
         font-size: 60px;
@@ -26,10 +30,14 @@ export const Small = styled.p`
 
 export const Description = styled.p`
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     line-height: 1.5;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 520px) {
+        font-size: 20px;
+    }
 `;
 
 export const Container = styled.div`

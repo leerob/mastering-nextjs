@@ -8,9 +8,14 @@ import LogosSection from '../Logos';
 
 const Section = styled.section`
     border-top: 10px solid #ebefff;
-    background: linear-gradient(217deg, rgba(255, 0, 0, 0.42), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 255, 0, 0.43), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%);
+    background: linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%),
+        linear-gradient(217deg, rgba(255, 0, 0, 0.42), rgba(255, 0, 0, 0) 70.71%);
+
+    @media screen and (min-width: 500px) {
+        background: linear-gradient(217deg, rgba(255, 0, 0, 0.42), rgba(255, 0, 0, 0) 70.71%),
+            linear-gradient(127deg, rgba(0, 255, 0, 0.43), rgba(0, 255, 0, 0) 70.71%),
+            linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%);
+    }
 `;
 
 const Hero = styled.div`
