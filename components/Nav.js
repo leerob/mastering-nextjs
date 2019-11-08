@@ -55,7 +55,7 @@ const Nav = () => (
         <div>
             <NavLink slug={'#why'}>{'Why Next.js?'}</NavLink>
             <NavLink slug={'#overview'}>{'Overview'}</NavLink>
-            <NavLink slug={'blog'}>{'Blog'}</NavLink>
+            {/* <NavLink slug={'blog'}>{'Blog'}</NavLink> */}
             <ProjectsLink slug={'#preorder'}>{'Preorder'}</ProjectsLink>
         </div>
     </StyledNav>

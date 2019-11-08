@@ -19,8 +19,8 @@ import Nav from './Nav';
 import Ol from './elements/ol';
 import Page from './page';
 import Strong from './elements/strong';
-import Subscribe from './subscribe';
 import Ul from './elements/ul';
+import CourseBlock from './CourseBlock';
 
 const components = {
     a: A,
@@ -46,28 +46,20 @@ const Main = styled.main`
     }
 `;
 
-const editUrl = (slug) => `https://github.com/leerob/mastering-nextjs/edit/master/pages/${slug}.mdx`;
-const discussUrl = (slug) =>
-    `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://masteringnextjs.com/${slug}`)}`;
-
 const Post = ({children, meta}) => (
-    <Page date={meta.date} description={meta.description} image={meta.image} title={`${meta.title} - Lee Robinson`}>
+    <Page
+        date={meta.date}
+        description={meta.description}
+        image={meta.image}
+        title={`${meta.title} - Mastering Next.js`}
+    >
         <Nav />
         <Main>
             <MDXProvider components={components}>
                 <article>{children}</article>
             </MDXProvider>
             <hr />
-            <p>
-                <A href={discussUrl(meta.slug)} rel="noopener noreferrer" target="_blank">
-                    {'Discuss on Twitter'}
-                </A>
-                {` • `}
-                <A href={editUrl(meta.slug)} rel="noopener noreferrer" target="_blank">
-                    {'Edit on GitHub'}
-                </A>
-            </p>
-            <Subscribe />
+            <CourseBlock />
         </Main>
         <Footer />
     </Page>
