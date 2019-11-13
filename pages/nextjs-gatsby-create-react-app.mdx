@@ -51,8 +51,8 @@ If you had previously heard of Next but haven't checked it out in a while, I wou
 
 ## Gatsby
 
-The key difference between Next.js and Gatsby is that Gatsby doesn't use a server. It's purely a **static site generator**.
-This could be a pro or a con depending on your use case, but in general, having more flexibility helps.
+The key difference between Next.js and Gatsby is that Gatsby doesn't use a server.
+While Gatsby's main use case is for static sites, it can also re-hydrate into a fully-functional React application.
 Many other Next.js vs. Gatsby comparisons miss the fact that Next.js can also be used as a static site generator.
 
 Gatsby comes bundled with GraphQL for data fetching. Here's a short example.
@@ -78,7 +78,7 @@ export const query = graphql`
 export default HomePage;
 ```
 
-On the inverse, Next.js allows you to choose whatever mechanism for retrieving data you want.
+You can use [Gatsby without GraphQL](https://www.gatsbyjs.org/docs/using-gatsby-without-graphql/) if you absolutely must/want, but it's one of the key features it promotes.
 
 **Pros**
 
@@ -88,10 +88,8 @@ On the inverse, Next.js allows you to choose whatever mechanism for retrieving d
 
 **Cons**
 
--   ⛔️ GraphQL knowledge required
--   ⛔️ Only supports static sites
--   ⛔️ Build time for large sites
--   ⛔️ More open issues / PRs than others
+-   ⛔️ GraphQL knowledge potentially needed
+-   ⛔️ Potentially large build times (e.g. lots of images/fetches)
 
 ## Create React App
 
@@ -102,11 +100,12 @@ Unfortunately, that also means there's less you get for free as you scale your a
 
 -   ✅ Easiest to learn (no extra framework)
 -   ✅ Created & maintained by React team
+-   ✅ Built-in TypeScript support
 
 **Cons**
 
 -   ⛔️ No server-side rendering
--   ⛔️ No code-splitting
+-   ⛔️ No code-splitting out of the box ([can be configured](https://create-react-app.dev/docs/code-splitting/))
 -   ⛔️ Requires client-side routing library (e.g. React Router)
 -   ⛔️ "Ejecting" for custom use cases can add complexity
 
