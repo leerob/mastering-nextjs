@@ -1,0 +1,13 @@
+{
+    "name": "03-styled-jsx",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest"
+    }
+}

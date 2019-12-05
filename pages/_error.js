@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Footer from '../components/footer';
 import Page from '../components/page';
-import BoltIcon from '../icons/bolt.svg';
 import {column, heading} from '../styles/mixins';
 import {spacing} from '../styles/vars';
 import Nav from '../components/Nav';
@@ -36,10 +35,7 @@ const Error = () => (
     >
         <Nav />
         <Article>
-            <h3>
-                <BoltIcon />
-                {'Oops!'}
-            </h3>
+            <h3>{'Oops!'}</h3>
             <p>{'Whatever it was you were looking for no longer exists.'}</p>
             <p>{'Sorry about that!'}</p>
         </Article>

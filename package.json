@@ -12,22 +12,7 @@
         "type": "git",
         "url": "git+https://github.com/leerob/mastering-nextjs.git"
     },
-    "engines": {
-        "node": ">=10.15.0",
-        "yarn": ">=1.5.1"
-    },
-    "files": [
-        "components",
-        "lib",
-        "data",
-        "icons",
-        "pages",
-        "static",
-        "styles",
-        "utils"
-    ],
     "scripts": {
-        "analyze": "cross-env ANALYZE=true next build",
         "build": "cross-env NODE_ENV=production next build",
         "dev": "next",
         "export": "node scripts/export.js",
@@ -91,8 +76,8 @@
         "cpy": "7.3.0",
         "cross-env": "5.2.0",
         "del": "5.0.0",
-        "eslint": "4.19.1",
-        "eslint-config-get-off-my-lawn-prettier": "1.0.0",
+        "eslint": "6.7.2",
+        "eslint-config-get-off-my-lawn": "^5.0.1",
         "execa": "2.0.3",
         "execa-output": "2.0.0",
         "globby": "10.0.1",
@@ -101,8 +86,7 @@
         "lint-staged": "8.2.1",
         "listr": "0.14.3",
         "prettier": "1.18.2",
-        "prettify-xml": "1.2.0",
-        "webpack-bundle-analyzer": "3.3.2"
+        "prettify-xml": "1.2.0"
     },
     "resolutions": {
         "@mdx-js/mdx": "^0.16.0"
