@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import {Title} from '../shared';
 import Module from '../Module';
+import A from '../elements/a';
 
 const Section = styled.section`
     background-color: white;
@@ -50,7 +51,16 @@ const CourseOverviewSection = () => (
                     'Code splitting',
                     'Next vs. Create React App vs. Gatsby'
                 ]}
-                title="Introduction"
+                title={
+                    <A
+                        href="https://www.youtube.com/watch?v=uQeidE2LA1s"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        underline
+                    >
+                        {'Introduction'}
+                    </A>
+                }
             />
             <Module
                 lessons={[
