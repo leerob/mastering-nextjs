@@ -43,21 +43,21 @@ const AuthorSection = () => (
                 </Description>
                 <FeatureList>
                     <Feature>
-                        <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                        <CheckIcon alt="Checkmark" src="/images/check.svg" />
                         {'Beginner Friendly'}
                     </Feature>
                     <Feature>
-                        <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                        <CheckIcon alt="Checkmark" src="/images/check.svg" />
                         {'Open-Source Code'}
                     </Feature>
                     <Feature>
-                        <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                        <CheckIcon alt="Checkmark" src="/images/check.svg" />
                         {'High-Quality Video & Audio'}
                     </Feature>
                 </FeatureList>
             </Column>
             <CenteredColumn>
-                <AuthorImage alt="Lee Robinson" src="/static/images/lee.jpg" />
+                <AuthorImage alt="Lee Robinson" src="/images/lee.jpg" />
                 <MeetTheAuthor>{'Meet The Author'}</MeetTheAuthor>
                 <Description>
                     <A href="https://leerob.io" underline>

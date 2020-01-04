@@ -89,15 +89,15 @@ const WhyNextSection = () => {
                     </Description>
                     <FeatureList ref={ref}>
                         <Feature>
-                            <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                            <CheckIcon alt="Checkmark" src="/images/check.svg" />
                             {'Zero-Config Setup'}
                         </Feature>
                         <Feature>
-                            <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                            <CheckIcon alt="Checkmark" src="/images/check.svg" />
                             {'Fully Extensible'}
                         </Feature>
                         <Feature>
-                            <CheckIcon alt="Checkmark" src="/static/images/check.svg" />
+                            <CheckIcon alt="Checkmark" src="/images/check.svg" />
                             {'Server-Side Rendering'}
                         </Feature>
                     </FeatureList>

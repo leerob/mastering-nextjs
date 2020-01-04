@@ -25,7 +25,7 @@ const CourseBlock = () => (
             <Strong>{'get 50% off!'}</Strong>
         </p>
         <a href="https://masteringnextjs.com">
-            <MasteringNextjs alt="Mastering Next.js" src="/static/images/banner.jpg" />
+            <MasteringNextjs alt="Mastering Next.js" src="/images/banner.jpg" />
         </a>
     </>
 );

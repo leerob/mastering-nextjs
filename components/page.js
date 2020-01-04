@@ -26,13 +26,13 @@ const Page = ({children, date, description, image, title = 'Mastering Next.js', 
                 <meta content="follow, index" name="robots" />
                 <meta content="#ffffff" name="theme-color" />
                 <meta content="#ffffff" name="msapplication-TileColor" />
-                <meta content="/static/favicons/browserconfig.xml" name="msapplication-config" />
-                <link href="/static/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-                <link href="/static/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
-                <link href="/static/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
-                <link href="/static/favicons/site.webmanifest" rel="manifest" />
-                <link color="#5bbad5" href="/static/favicons/safari-pinned-tab.svg" rel="mask-icon" />
-                <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
+                <meta content="/favicons/browserconfig.xml" name="msapplication-config" />
+                <link href="/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+                <link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+                <link href="/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+                <link href="/favicons/site.webmanifest" rel="manifest" />
+                <link color="#5bbad5" href="/favicons/safari-pinned-tab.svg" rel="mask-icon" />
+                <link href="/favicons/favicon.ico" rel="shortcut icon" />
                 <link
                     href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap"
                     rel="stylesheet"

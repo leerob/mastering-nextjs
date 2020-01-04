@@ -66,7 +66,7 @@ const LogosSection = () => (
                     delay: 1
                 }}
             >
-                <SmallLogo alt="HTML" src="/static/images/html.svg" />
+                <SmallLogo alt="HTML" src="/images/html.svg" />
             </motion.div>
             <motion.div
                 animate={moveSlowly}
@@ -75,11 +75,11 @@ const LogosSection = () => (
                     delay: 0.5
                 }}
             >
-                <ZeitLogo alt="ZEIT" src="/static/images/zeit.svg" />
+                <ZeitLogo alt="ZEIT" src="/images/zeit.svg" />
             </motion.div>
         </div>
         <motion.div animate={moveSlowly} transition={transition}>
-            <NextLogo alt="Nextjs" src="/static/images/next.svg" />
+            <NextLogo alt="Nextjs" src="/images/next.svg" />
         </motion.div>
         <div>
             <motion.div
@@ -89,7 +89,7 @@ const LogosSection = () => (
                     delay: 1.5
                 }}
             >
-                <JsLogo alt="JavaScript" src="/static/images/js.svg" />
+                <JsLogo alt="JavaScript" src="/images/js.svg" />
             </motion.div>
             <motion.div
                 animate={moveSlowly}
@@ -98,7 +98,7 @@ const LogosSection = () => (
                     delay: 2
                 }}
             >
-                <SmallLogo alt="React.js" src="/static/images/react.svg" />
+                <SmallLogo alt="React.js" src="/images/react.svg" />
             </motion.div>
         </div>
     </Logos>

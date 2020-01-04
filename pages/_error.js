@@ -30,7 +30,7 @@ const Error = () => (
         description={
             'The premiere video course for building production, server-side rendered applications with Next.js and React.'
         }
-        image={'/static/images/banner.jpg'}
+        image={'/images/banner.jpg'}
         title={'Mastering Next.js - Not Found'}
     >
         <Nav />

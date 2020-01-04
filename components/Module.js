@@ -36,14 +36,14 @@ const Lesson = styled.li`
 const Module = ({title, lessons}) => (
     <div>
         <Title>
-            <img alt="module" src="/static/images/film.svg" />
+            <img alt="module" src="/images/film.svg" />
             {title}
         </Title>
         <LessonList>
             {lessons.map((lesson) => {
                 return (
                     <Lesson key={lesson}>
-                        <img alt="arrow" src="/static/images/arrow.svg" />
+                        <img alt="arrow" src="/images/arrow.svg" />
                         <h6>{lesson}</h6>
                     </Lesson>
                 );
