@@ -12,6 +12,10 @@
         "type": "git",
         "url": "git+https://github.com/leerob/mastering-nextjs.git"
     },
+    "engines": {
+        "node": "10.17.0",
+        "yarn": ">=1.10.0"
+    },
     "scripts": {
         "build": "next build",
         "dev": "next",
