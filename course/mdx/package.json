@@ -1,0 +1,18 @@
+{
+    "name": "mdx-blog",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@emotion/core": "^10.0.27",
+        "@mdx-js/react": "^1.5.3",
+        "@next/mdx": "^9.1.7",
+        "@theme-ui/components": "^0.2.50",
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "theme-ui": "^0.2.52"
+    }
+}
