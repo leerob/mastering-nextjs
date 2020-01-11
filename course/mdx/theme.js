@@ -19,7 +19,7 @@ export default {
         },
         h1: {
             fontSize: [4, 5, 6],
-            color: 'primary'
+            color: 'text'
         },
         a: {
             color: 'primary',

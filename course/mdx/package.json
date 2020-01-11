@@ -7,8 +7,10 @@
     },
     "dependencies": {
         "@emotion/core": "^10.0.27",
+        "@mdx-js/loader": "^1.5.3",
         "@mdx-js/react": "^1.5.3",
         "@next/mdx": "^9.1.7",
+        "@statickit/react": "^2.0.1",
         "@theme-ui/components": "^0.2.50",
         "next": "latest",
         "react": "latest",

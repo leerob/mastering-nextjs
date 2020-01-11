@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import {ThemeProvider, Styled} from 'theme-ui';
+import {StaticKitProvider} from '@statickit/react';
 
 import theme from '../theme';
 
@@ -11,7 +12,9 @@ class MyApp extends App {
         return (
             <ThemeProvider theme={theme}>
                 <Styled.root>
-                    <Component {...pageProps} />
+                    <StaticKitProvider site="SITE_ID_HERE">
+                        <Component {...pageProps} />
+                    </StaticKitProvider>
                 </Styled.root>
             </ThemeProvider>
         );

@@ -106,8 +106,8 @@ const CourseOverviewSection = () => (
                     'MDX vs CMS',
                     'Initial Setup',
                     'Managing Posts',
-                    'Building Forms',
-                    'Using a Component Library'
+                    'Building Forms (StaticKit)',
+                    'Using a Component Library (Theme UI)'
                 ]}
                 title="Building A Blog With MDX"
             />
