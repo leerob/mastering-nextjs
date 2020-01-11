@@ -13,17 +13,15 @@
         "url": "git+https://github.com/leerob/mastering-nextjs.git"
     },
     "scripts": {
-        "build": "cross-env NODE_ENV=production next build",
+        "build": "next build",
         "dev": "next",
-        "export": "node scripts/export.js",
         "imageoptim": "yarn imageoptim:gif && yarn imageoptim:jpg && yarn imageoptim:png",
         "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
         "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
         "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
         "lint": "eslint . --ext .json --ext .js",
-        "now-build": "yarn build && yarn export",
         "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\"",
-        "start": "cross-env NODE_ENV=production next start",
+        "start": "next start",
         "test": "yarn lint"
     },
     "husky": {
@@ -56,6 +54,7 @@
         "comma-number": "2.0.1",
         "date-fns": "1.30.1",
         "framer-motion": "1.7.0",
+        "globby": "^11.0.0",
         "isomorphic-unfetch": "3.0.0",
         "next": "9.1.7",
         "next-ga": "2.3.4",
@@ -73,17 +72,12 @@
         "@zeit/next-mdx": "1.2.0",
         "babel-plugin-inline-react-svg": "1.1.0",
         "babel-plugin-styled-components": "1.10.6",
-        "cross-env": "5.2.0",
         "eslint": "6.8.0",
         "eslint-config-get-off-my-lawn": "^5.0.1",
         "execa": "2.0.3",
-        "execa-output": "2.0.0",
-        "globby": "10.0.1",
         "husky": "3.0.0",
         "imageoptim-cli": "3.0.2",
         "lint-staged": "9.5.0",
-        "listr": "0.14.3",
-        "prettier": "1.19.1",
-        "prettify-xml": "1.2.0"
+        "prettier": "1.19.1"
     }
 }

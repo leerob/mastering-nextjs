@@ -9,6 +9,9 @@ const withMDX = require('@zeit/next-mdx')({
 
 module.exports = withCSS(
     withMDX({
+        experimental: {
+            modern: true
+        },
         pageExtensions: ['js', 'mdx']
     })
 );
