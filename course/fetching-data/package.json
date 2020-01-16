@@ -1,0 +1,15 @@
+{
+    "name": "01-api-routes",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "swr": "^0.1.16",
+        "unfetch": "^4.1.0"
+    }
+}

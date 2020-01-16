@@ -90,7 +90,7 @@ const CourseOverviewSection = () => (
                 ]}
                 title="Styling"
             />
-            <Module lessons={['Node.js & API Routes', 'Custom Server', 'GraphQL', 'CMS']} title="Fetching Data" />
+            <Module lessons={['Custom Server', 'Node.js & API Routes', 'GraphQL', 'Hasura']} title="Fetching Data" />
             <Module
                 lessons={[
                     'Static Assets',

@@ -31,7 +31,7 @@ const AuthorSection = () => (
                 </Title>
                 <Description>
                     {
-                        'You will be expected to be familiar with basic HTML, CSS, JavaScript, and React. We’ll utilize the latest JavaScript features and best practices for 2019.'
+                        'You will be expected to be familiar with basic HTML, CSS, JavaScript, and React. We’ll utilize the latest JavaScript features and best practices.'
                     }
                 </Description>
                 <Description>

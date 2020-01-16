@@ -1,5 +1,4 @@
 const rehypePrism = require('@mapbox/rehype-prism');
-const withCSS = require('@zeit/next-css');
 const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/u,
     options: {
@@ -7,11 +6,10 @@ const withMDX = require('@zeit/next-mdx')({
     }
 });
 
-module.exports = withCSS(
-    withMDX({
-        experimental: {
-            modern: true
-        },
-        pageExtensions: ['js', 'mdx']
-    })
-);
+module.exports = withMDX({
+    experimental: {
+        css: true,
+        modern: true
+    },
+    pageExtensions: ['js', 'mdx']
+});
