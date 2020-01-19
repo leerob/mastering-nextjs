@@ -63,7 +63,7 @@ const HeroSection = () => (
                     >
                         <Title>
                             <p>{'The Complete'}</p>
-                            <span>{'Next.js Guide'}</span>
+                            <span>{'Next.js Course'}</span>
                         </Title>
                     </motion.div>
                     <Description as="h2">
