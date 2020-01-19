@@ -46,7 +46,7 @@ const HeroSection = () => (
         <Hero>
             <Container>
                 <Column>
-                    <Underlined>{'Coming Soon'}</Underlined>
+                    <Underlined>{'Available Now!'}</Underlined>
                     <motion.div
                         animate="visible"
                         initial="hidden"
