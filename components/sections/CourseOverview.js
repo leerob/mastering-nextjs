@@ -112,7 +112,7 @@ const CourseOverviewSection = () => (
                 title="Building A Blog With MDX"
             />
             <Module
-                lessons={['What is a JWT?', 'Auth0', 'Passport.js', 'Login & Signup Pages']}
+                lessons={['What is a JWT?', 'Auth0', 'Firebase Auth', 'Login & Signup Pages']}
                 title="Authentication"
             />
             <Module
