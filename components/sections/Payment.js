@@ -59,6 +59,13 @@ const Price = styled.p`
     font-size: 60px;
     color: black;
     margin: 8px;
+    display: flex;
+    align-items: center;
+
+    small {
+        margin-right: 2px;
+        font-size: 32px;
+    }
 `;
 
 const Currency = styled.p`
@@ -107,7 +114,10 @@ const PaymentSection = () => (
             </CardHeader>
             <PriceContainer>
                 <OriginalPrice>{'$199'}</OriginalPrice>
-                <Price>{'$99'}</Price>
+                <Price>
+                    <small>{'$'}</small>
+                    {'99'}
+                </Price>
                 <Currency>{'USD'}</Currency>
             </PriceContainer>
             <Features>
