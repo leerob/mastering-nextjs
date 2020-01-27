@@ -118,8 +118,8 @@ const CourseOverviewSection = () => (
             <Module
                 lessons={[
                     'Unit test vs Integration test',
-                    'Jest Snapshot Testing',
                     'React Testing Library',
+                    'Jest Snapshot Testing',
                     'Sentry Plugin',
                     'Custom Error Page (_error.js)'
                 ]}

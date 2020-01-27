@@ -112,7 +112,7 @@ const WhyNextSection = () => {
                             </Bullet>
                             <BulletDescription>
                                 {
-                                    'A blog using Markdown & React (MDX),  optimized for SEO. A company landing page with fully custom API included.'
+                                    'A blog using Markdown & React (MDX),  optimized for SEO. A Reddit-like crowdsourced voting app with a custom GraphQL API.'
                                 }
                             </BulletDescription>
                         </motion.li>

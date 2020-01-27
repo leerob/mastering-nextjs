@@ -45,6 +45,7 @@ const EarlyAccessButton = styled(Button)`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4px;
 `;
 
 const PriceContainer = styled.div`
@@ -76,6 +77,7 @@ const Features = styled.ul`
     li {
         margin-bottom: 16px;
         display: inline-flex;
+        align-items: flex-start;
     }
 
     p {
@@ -88,6 +90,13 @@ const Features = styled.ul`
 const Check = styled.img`
     width: 20px;
     margin-right: 8px;
+    margin-top: 2px;
+`;
+
+const Avalibility = styled.div`
+    font-size: 14px;
+    text-align: center;
+    color: #4b4444;
 `;
 
 const PaymentSection = () => (
@@ -125,6 +134,7 @@ const PaymentSection = () => (
                     </p>
                 </li>
             </Features>
+            <Avalibility>{'Available February 12th'}</Avalibility>
             <EarlyAccessButton
                 as="a"
                 href="https://gumroad.com/l/sDpG/launch"
