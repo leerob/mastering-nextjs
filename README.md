@@ -1,4 +1,6 @@
-# Mastering Next.js
+# [Mastering Next.js](https://masteringnextjs.com/)
+
+The premiere video course for building production, server-side rendered applications with Next.js and React. Companies all over the world are using Next.js to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications.
 
 ## [React Overview](/course/react)
 
