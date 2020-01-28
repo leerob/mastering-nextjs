@@ -9,8 +9,13 @@ const Section = styled.section`
     padding: 48px 24px 24px;
 
     @media screen and (min-width: 1000px) {
-        padding: 128px;
+        padding: 80px;
     }
+`;
+
+const MaxWidthContainer = styled(Container)`
+    max-width: 1050px;
+    margin: 0 auto;
 `;
 
 const AuthorImage = styled.img`
@@ -24,7 +29,7 @@ const MeetTheAuthor = styled(Small)`
 
 const AuthorSection = () => (
     <Section>
-        <Container>
+        <MaxWidthContainer>
             <Column>
                 <Title as="h3">
                     <span>{'Who Is This For?'}</span>
@@ -73,7 +78,7 @@ const AuthorSection = () => (
                     }
                 </Description>
             </CenteredColumn>
-        </Container>
+        </MaxWidthContainer>
     </Section>
 );
 

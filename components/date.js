@@ -10,7 +10,7 @@ const StyledDate = styled.time`
     color: ${colors.accent};
     display: block;
     font-size: 12px;
-    margin: 0.5em 0 0;
+    margin: 0.5em 0 0.5em;
     padding: 2px 10px;
     text-transform: uppercase;
     width: max-content;

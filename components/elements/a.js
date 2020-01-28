@@ -16,7 +16,7 @@ const A = styled.a`
         props.underline &&
         css`
             color: ${colors.text};
-            background-image: linear-gradient(120deg, #2ec7c0 0%, #1a86e4 100%);
+            background-image: linear-gradient(120deg, rgba(255, 0, 0, 0.42) 0%, rgba(0, 0, 255, 0.45) 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.2em;
             background-position: 0 100%;

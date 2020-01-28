@@ -11,20 +11,44 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
 
     @media (min-width: 822px) {
-        padding: 2em 4em 4em;
+        padding: 2em 3em 4em;
+    }
+
+    @media (min-width: 1000px) {
+        padding: 2em 7em 4em;
+    }
+
+    @media (min-width: 1234px) {
+        padding: 2em 8em 4em;
+    }
+`;
+
+const Logo = styled.img`
+    display: flex;
+    height: 20px;
+    padding-right: 2em;
+
+    @media (min-width: 737px) {
+        height: 26px;
+        padding-right: 3em;
     }
 `;
 
 const NavLink = styled(Link)`
-    color: ${colors.accent};
-    font-size: 0.8em;
+    color: ${colors.text};
+    font-weight: bold;
+    font-size: 0.9em;
     text-decoration: none;
     transition: all 0.15s ease;
+    padding: 4px 12px;
+    border-radius: 8px;
 
     :hover {
-        color: ${colors.text};
+        background-color: rgba(18, 18, 18, 0.05);
     }
 
     @media (min-width: 737px) {
@@ -32,31 +56,29 @@ const NavLink = styled(Link)`
     }
 
     + a {
-        margin: 0 0 0 2em;
+        margin: 0 0 0 0.5em;
 
         @media (min-width: 737px) {
-            margin: 0 0 0 2em;
+            margin: 0 0 0 0.5em;
         }
     }
 `;
 
-const ProjectsLink = styled(NavLink)`
-    display: none;
-
-    @media (min-width: 405px) {
-        display: initial;
-    }
+const Centered = styled.div`
+    display: flex;
+    align-items: center;
 `;
 
 const Nav = () => (
     <StyledNav>
-        <div />
-        <div>
-            <NavLink slug={'#why'}>{'Why Next.js?'}</NavLink>
-            <NavLink slug={'#overview'}>{'Overview'}</NavLink>
-            {/* <NavLink slug={'blog'}>{'Blog'}</NavLink> */}
-            <ProjectsLink slug={'#preorder'}>{'Preorder'}</ProjectsLink>
-        </div>
+        <Link aria-label="Mastering Next.js - Home">
+            <Logo alt="Mastering Next.js" src="/images/nextjs-logo.png" />
+        </Link>
+        <Centered>
+            <NavLink slug={'#overview'}>{'Features'}</NavLink>
+            <NavLink slug={'blog'}>{'Blog'}</NavLink>
+            <NavLink slug={'#buy'}>{'Buy'}</NavLink>
+        </Centered>
     </StyledNav>
 );
 

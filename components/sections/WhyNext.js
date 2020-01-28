@@ -11,8 +11,13 @@ const Section = styled.section`
     padding: 48px 24px 24px;
 
     @media screen and (min-width: 1000px) {
-        padding: 128px;
+        padding: 80px;
     }
+`;
+
+const MaxWidthContainer = styled(Container)`
+    max-width: 1050px;
+    margin: 0 auto;
 `;
 
 const Bullet = styled.h4`
@@ -71,8 +76,8 @@ const WhyNextSection = () => {
     const [ref, inView] = useInView();
 
     return (
-        <Section id="why">
-            <Container>
+        <Section id="why" ref={ref}>
+            <MaxWidthContainer>
                 <Column>
                     <Title as="h3">
                         <p>{'Why'}</p>
@@ -87,7 +92,7 @@ const WhyNextSection = () => {
                             ' to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications.'
                         }
                     </Description>
-                    <FeatureList ref={ref}>
+                    <FeatureList>
                         <Feature>
                             <CheckIcon alt="Checkmark" src="/images/check.svg" />
                             {'Zero-Config Setup'}
@@ -133,12 +138,12 @@ const WhyNextSection = () => {
                                 {'Jam-Packed Lessons'}
                             </Bullet>
                             <BulletDescription>
-                                {`Pre-order now to get project updates, early previews, and be the first to know when it's ready.`}
+                                {`12 easy to consume video modules. Everything you need to know to build Next.js apps.`}
                             </BulletDescription>
                         </motion.li>
                     </MotionList>
                 </CenteredColumn>
-            </Container>
+            </MaxWidthContainer>
         </Section>
     );
 };

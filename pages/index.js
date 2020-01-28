@@ -7,6 +7,7 @@ import HeroSection from '../components/sections/Hero';
 import PaymentSection from '../components/sections/Payment';
 import CourseOverviewSection from '../components/sections/CourseOverview';
 import AuthorSection from '../components/sections/Author';
+import FaqSection from '../components/sections/Faq';
 
 const Index = () => (
     <>
@@ -23,6 +24,7 @@ const Index = () => (
                 <CourseOverviewSection />
                 <AuthorSection />
                 <PaymentSection />
+                <FaqSection />
             </main>
         </Page>
         <CourseJsonLd

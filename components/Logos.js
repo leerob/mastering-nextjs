@@ -25,12 +25,10 @@ const SmallLogo = styled.img`
     width: 35px;
     opacity: 0.2;
     margin: 35px;
-    filter: grayscale(100%);
     transition: all 0.8s ease;
 
     :hover {
         opacity: 1;
-        filter: grayscale(0);
     }
 
     @media screen and (min-width: 1000px) {
@@ -47,8 +45,8 @@ const ZeitLogo = styled(SmallLogo)`
 `;
 
 const moveSlowly = {
-    x: 3,
-    y: 3
+    x: 4,
+    y: 4
 };
 const transition = {
     duration: 2,
@@ -78,9 +76,7 @@ const LogosSection = () => (
                 <ZeitLogo alt="ZEIT" src="/images/zeit.svg" />
             </motion.div>
         </div>
-        <motion.div animate={moveSlowly} transition={transition}>
-            <NextLogo alt="Nextjs" src="/images/next.svg" />
-        </motion.div>
+        <NextLogo alt="Nextjs" src="/images/next.svg" />
         <div>
             <motion.div
                 animate={moveSlowly}
