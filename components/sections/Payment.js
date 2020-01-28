@@ -7,6 +7,7 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 600px;
     background: linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%),
         linear-gradient(217deg, rgba(255, 0, 0, 0.42), rgba(255, 0, 0, 0) 70.71%);
 `;
