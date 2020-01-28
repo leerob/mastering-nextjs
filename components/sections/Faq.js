@@ -15,7 +15,8 @@ const QUESTIONS = [
         questionName: 'Can I get Mastering Next.js for my entire team?'
     },
     {
-        acceptedAnswerText: `Totally! Click the "Generate" button on your receipt from Gumroad after you purchase and you can generate a detailed invoice with any additional information you need.`,
+        acceptedAnswerText:
+            'Totally! Click the generate button on your receipt from Gumroad after you purchase and you can generate a detailed invoice with any additional information you need.',
         questionName: 'Can I get an invoice?'
     },
     {
