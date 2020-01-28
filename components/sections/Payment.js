@@ -100,14 +100,16 @@ const Check = styled.img`
     margin-top: 2px;
 `;
 
-const Avalibility = styled.div`
+const Discount = styled.div`
+    margin: 8px;
     font-size: 14px;
     text-align: center;
     color: #4b4444;
+    font-weight: bold;
 `;
 
 const PaymentSection = () => (
-    <Section id="preorder">
+    <Section id="buy">
         <Card>
             <CardHeader>
                 <Small>{'The Complete Package'}</Small>
@@ -144,7 +146,7 @@ const PaymentSection = () => (
                     </p>
                 </li>
             </Features>
-            <Avalibility>{'Available February 12th'}</Avalibility>
+            <Discount>{'🎉 50% launch discount! 🎉'}</Discount>
             <EarlyAccessButton
                 as="a"
                 href="https://gumroad.com/l/sDpG/launch"
@@ -152,7 +154,7 @@ const PaymentSection = () => (
                 whileHover={{scale: 1.05}}
                 whileTap={{scale: 0.9}}
             >
-                {'Preorder Now'}
+                {'Buy Now'}
             </EarlyAccessButton>
         </Card>
     </Section>

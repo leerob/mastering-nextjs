@@ -21,7 +21,7 @@ const CourseBlock = () => (
             </A>
             {' containing '}
             <Strong>{'55 jam-packed lessons'}</Strong>
-            {'. Pre-order now and '}
+            {'. Buy now and '}
             <Strong>{'get 50% off!'}</Strong>
         </p>
         <a href="https://masteringnextjs.com">

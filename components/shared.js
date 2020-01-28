@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 export const Title = styled.h1`
     font-weight: 800;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 24px;
 
     @media screen and (min-width: 520px) {
