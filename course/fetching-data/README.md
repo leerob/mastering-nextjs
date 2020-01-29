@@ -1,5 +1,7 @@
 # Fetching Data
 
+The rest of the code for this module lives inside the [daydrink repository](https://github.com/leerob/daydrink).
+
 ## Resources
 
 -   [Custom Server](https://nextjs.org/docs/advanced-features/custom-server)

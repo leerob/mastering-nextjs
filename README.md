@@ -37,5 +37,5 @@ The premiere video course for building production, server-side rendered applicat
 
 -   Custom Server
 -   Node.js & API Routes
--   GraphQL
--   Hasura
+-   GraphQL ([daydrink](https://github.com/leerob/daydrink))
+-   Hasura ([daydrink](https://github.com/leerob/daydrink))
