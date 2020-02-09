@@ -1,23 +1,12 @@
 {
     "version": 2,
     "name": "mastering-nextjs",
-    "alias": ["masteringnextjs.com", "www.masteringnextjs.com"],
-    "builds": [
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
         {
-            "src": "package.json",
-            "use": "@now/next"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/public/(.*)",
-            "dest": "/public/$1",
-            "headers": {"cache-control": "public,max-age=31536000,immutable"}
-        },
-        {
-            "src": "/(.*\\.(js|jpg|json|css|ico|png)$)",
-            "dest": "/$1",
-            "headers": {"cache-control": "public,max-age=31536000,immutable"}
+            "source": "/launch",
+            "destination": "/"
         }
     ]
 }
