@@ -39,3 +39,7 @@ The premiere video course for building production, server-side rendered applicat
 -   Node.js & API Routes
 -   GraphQL ([daydrink](https://github.com/leerob/daydrink))
 -   Hasura ([daydrink](https://github.com/leerob/daydrink))
+
+## Resources
+
+-   See [/resources](https://masteringnextjs.com/resources).
