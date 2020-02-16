@@ -46,6 +46,22 @@ const LaunchBanner = styled.div`
     font-weight: bold;
 `;
 
+const RatingSection = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+`;
+
+const Star = styled.img`
+    width: 14px;
+    margin-right: 1px;
+`;
+
+const GumroadLogo = styled.img`
+    width: 14px;
+    margin-left: 8px;
+`;
+
 const HeroSection = () => (
     <Section>
         <LaunchBanner>{'🎉 Launch Price! Get 50% off for the next 30 days.'}</LaunchBanner>
@@ -73,6 +89,14 @@ const HeroSection = () => (
                             <span>{'Next.js Course'}</span>
                         </Title>
                     </motion.div>
+                    <RatingSection>
+                        <Star alt="star" src="/images/star.svg" />
+                        <Star alt="star" src="/images/star.svg" />
+                        <Star alt="star" src="/images/star.svg" />
+                        <Star alt="star" src="/images/star.svg" />
+                        <Star alt="star" src="/images/star.svg" />
+                        <GumroadLogo alt="Gumroad" src="/images/gumroad.png" />
+                    </RatingSection>
                     <Description as="h2">
                         {
                             'The premiere video course for building production, server-side rendered applications with Next.js and React.'
