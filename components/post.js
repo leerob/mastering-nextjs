@@ -47,12 +47,7 @@ const Main = styled.main`
 `;
 
 const Post = ({children, meta}) => (
-    <Page
-        date={meta.date}
-        description={meta.description}
-        image={meta.image}
-        title={`${meta.title} - Mastering Next.js`}
-    >
+    <Page date={meta.date} description={meta.description} image={meta.image} title={meta.title}>
         <Nav />
         <Main>
             <MDXProvider components={components}>
