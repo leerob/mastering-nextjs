@@ -75,7 +75,7 @@ const Nav = () => (
             <Logo alt="Mastering Next.js" src="/images/nextjs-logo.png" />
         </Link>
         <Centered>
-            <NavLink slug={'#overview'}>{'Features'}</NavLink>
+            <NavLink slug={'resources'}>{'Resources'}</NavLink>
             <NavLink slug={'blog'}>{'Blog'}</NavLink>
             <NavLink slug={'#buy'}>{'Buy'}</NavLink>
         </Centered>
