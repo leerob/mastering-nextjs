@@ -3587,7 +3587,7 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fast-deep-equal@^2.0.1:
+fast-deep-equal@2.0.1, fast-deep-equal@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
@@ -8057,6 +8057,13 @@ swap-case@^1.1.0:
   dependencies:
     lower-case "^1.1.1"
     upper-case "^1.1.1"
+
+swr@^0.1.17:
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.1.17.tgz#9777012d9bb7a72d75cc31225f8d39dfdf033c32"
+  integrity sha512-MTBjeuLAGvzuzoWnx5iQT8fJpiB+X8dHkiE6LcmfiuN4qz31l4mEHQ84QbB+yyGsquxinpqeqWOzBXcB7m82yg==
+  dependencies:
+    fast-deep-equal "2.0.1"
 
 symbol-observable@^1.1.0:
   version "1.2.0"

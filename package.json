@@ -68,6 +68,7 @@
         "react-syntax-highlighter": "12.2.1",
         "styled-components": "5.0.0",
         "styled-reset": "4.1.0",
+        "swr": "^0.1.17",
         "title": "3.4.1"
     },
     "devDependencies": {

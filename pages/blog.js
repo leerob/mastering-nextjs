@@ -6,7 +6,7 @@ import Main from '../components/main';
 import Nav from '../components/Nav';
 import Page from '../components/page';
 
-const Index = () => (
+const Blog = () => (
     <Page
         description={
             'The premiere video course for building production, server-side rendered applications with Next.js and React.'
@@ -22,4 +22,4 @@ const Index = () => (
     </Page>
 );
 
-export default Index;
+export default Blog;
