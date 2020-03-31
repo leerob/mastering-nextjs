@@ -60,7 +60,7 @@
         "framer-motion": "1.8.0",
         "globby": "^11.0.0",
         "isomorphic-unfetch": "3.0.0",
-        "next": "9.2.1",
+        "next": "9.3.2",
         "next-seo": "^3.4.0",
         "react": "16.12.0",
         "react-dom": "16.12.0",
