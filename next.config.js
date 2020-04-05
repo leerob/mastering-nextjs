@@ -2,14 +2,11 @@ const rehypePrism = require('@mapbox/rehype-prism');
 const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/u,
     options: {
-        hastPlugins: [rehypePrism]
-    }
+        hastPlugins: [rehypePrism],
+    },
 });
 
 module.exports = withMDX({
-    experimental: {
-        modern: true
-    },
     pageExtensions: ['js', 'mdx'],
     webpack: (config, {isServer}) => {
         if (isServer) {
@@ -17,5 +14,5 @@ module.exports = withMDX({
         }
 
         return config;
-    }
+    },
 });
