@@ -36,7 +36,7 @@ const Index = () => (
         <ProductJsonLd
             aggregateRating={{
                 ratingValue: '5.0',
-                reviewCount: '7'
+                reviewCount: '7',
             }}
             brand="Mastering Next.js"
             description="The premiere video course for building production, server-side rendered applications with Next.js and React. Companies all over the world are using Next.js to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications."
@@ -48,14 +48,17 @@ const Index = () => (
                 priceCurrency: 'USD',
                 priceValidUntil: '2021-02-12',
                 seller: {
-                    name: 'Lee Robinson'
+                    name: 'Lee Robinson',
                 },
-                url: 'https://masteringnextjs.com'
+                url: 'https://masteringnextjs.com',
             }}
             productName="Mastering Next.js"
             reviews={[
                 {
-                    author: 'Matt DeJong',
+                    author: {
+                        name: 'Matt',
+                        type: 'Person',
+                    },
                     datePublished: '2020-01-24T03:37:40Z',
                     name: 'Shipped my first Next.js app last week - thank you!',
                     reviewBody:
@@ -63,9 +66,9 @@ const Index = () => (
                     reviewRating: {
                         bestRating: '5',
                         ratingValue: '5',
-                        worstRating: '1'
-                    }
-                }
+                        worstRating: '1',
+                    },
+                },
             ]}
         />
     </>
