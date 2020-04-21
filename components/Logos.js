@@ -40,18 +40,18 @@ const JsLogo = styled(SmallLogo)`
     margin-bottom: 8px;
 `;
 
-const ZeitLogo = styled(SmallLogo)`
+const VercelLogo = styled(SmallLogo)`
     margin-left: 8px;
 `;
 
 const moveSlowly = {
     x: 4,
-    y: 4
+    y: 4,
 };
 const transition = {
     duration: 2,
     ease: 'easeInOut',
-    yoyo: Infinity
+    yoyo: Infinity,
 };
 
 const LogosSection = () => (
@@ -61,7 +61,7 @@ const LogosSection = () => (
                 animate={moveSlowly}
                 transition={{
                     ...transition,
-                    delay: 1
+                    delay: 1,
                 }}
             >
                 <SmallLogo alt="HTML" src="/images/html.svg" />
@@ -70,10 +70,10 @@ const LogosSection = () => (
                 animate={moveSlowly}
                 transition={{
                     ...transition,
-                    delay: 0.5
+                    delay: 0.5,
                 }}
             >
-                <ZeitLogo alt="ZEIT" src="/images/zeit.svg" />
+                <VercelLogo alt="Vercel" src="/images/vercel.svg" />
             </motion.div>
         </div>
         <NextLogo alt="Nextjs" src="/images/next.svg" />
@@ -82,7 +82,7 @@ const LogosSection = () => (
                 animate={moveSlowly}
                 transition={{
                     ...transition,
-                    delay: 1.5
+                    delay: 1.5,
                 }}
             >
                 <JsLogo alt="JavaScript" src="/images/js.svg" />
@@ -91,7 +91,7 @@ const LogosSection = () => (
                 animate={moveSlowly}
                 transition={{
                     ...transition,
-                    delay: 2
+                    delay: 2,
                 }}
             >
                 <SmallLogo alt="React.js" src="/images/react.svg" />
