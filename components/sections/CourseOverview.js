@@ -49,7 +49,7 @@ const CourseOverviewSection = () => (
                     'Universal JavaScript (Isomorphic)',
                     'Server-side rendering',
                     'Code splitting',
-                    'Next vs. Create React App vs. Gatsby'
+                    'Next vs. Create React App vs. Gatsby',
                 ]}
                 title={
                     <A
@@ -68,7 +68,7 @@ const CourseOverviewSection = () => (
                     'Props & State',
                     'React Hooks (useState & useEffect)',
                     'ES6',
-                    'JSX'
+                    'JSX',
                 ]}
                 title="React Overview"
             />
@@ -86,18 +86,35 @@ const CourseOverviewSection = () => (
                     'Sass',
                     'CSS-in-JS (Custom _app.js)',
                     'Styled-Components',
-                    'Responsive + Mobile-First Design'
+                    'Responsive + Mobile-First Design',
                 ]}
                 title="Styling"
             />
-            <Module lessons={['Custom Server', 'Node.js & API Routes', 'GraphQL', 'Hasura']} title="Fetching Data" />
+            <Module
+                lessons={[
+                    <A
+                        href="https://www.youtube.com/watch?v=wk-dUsLUADg"
+                        key="static sites"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        underline
+                    >
+                        {'Static Sites with Next.js 9.3'}
+                    </A>,
+                    'Custom Server',
+                    'Node.js & API Routes',
+                    'GraphQL',
+                    'Hasura',
+                ]}
+                title="Fetching Data"
+            />
             <Module
                 lessons={[
                     'Static Assets',
                     'Public Files',
                     'Image Compression / Optimization',
                     'Custom _document.js',
-                    'Open Graph (OG) tags'
+                    'Open Graph (OG) tags',
                 ]}
                 title="Managing Assets and SEO"
             />
@@ -107,7 +124,7 @@ const CourseOverviewSection = () => (
                     'Initial Setup',
                     'Managing Posts',
                     'Building Forms (StaticKit)',
-                    'Using a Component Library (Theme UI)'
+                    'Using a Component Library (Theme UI)',
                 ]}
                 title="Building A Blog With MDX"
             />
@@ -121,7 +138,7 @@ const CourseOverviewSection = () => (
                     'React Testing Library',
                     'Jest Snapshot Testing',
                     'Sentry Plugin',
-                    'Custom Error Page (_error.js)'
+                    'Custom Error Page (_error.js)',
                 ]}
                 title="Testing & Error Handling"
             />
@@ -130,7 +147,7 @@ const CourseOverviewSection = () => (
                 title="State Management & More"
             />
             <Module
-                lessons={['Static Pre-Rendering', 'Serverless Functions', 'Zeit Now', 'Netlify']}
+                lessons={['Static Pre-Rendering', 'Serverless Functions', 'Vercel', 'Netlify']}
                 title="Exporting & Deployment"
             />
         </ModuleList>

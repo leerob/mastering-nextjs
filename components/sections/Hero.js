@@ -76,12 +76,12 @@ const HeroSection = () => (
                         variants={{
                             hidden: {
                                 opacity: 0,
-                                y: -100
+                                y: -100,
                             },
                             visible: {
                                 opacity: 1,
-                                y: 0
-                            }
+                                y: 0,
+                            },
                         }}
                     >
                         <Title>
@@ -99,7 +99,7 @@ const HeroSection = () => (
                     </RatingSection>
                     <Description as="h2">
                         {
-                            'The premiere video course for building production, server-side rendered applications with Next.js and React.'
+                            'The premiere video course for building static and server-side rendered applications with Next.js and React.'
                         }
                     </Description>
                     <Link href="#buy">

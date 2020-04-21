@@ -49,27 +49,27 @@ const list = {
     hidden: {
         opacity: 0,
         transition: {
-            when: 'afterChildren'
-        }
+            when: 'afterChildren',
+        },
     },
     visible: {
         opacity: 1,
         transition: {
             staggerChildren: 0.3,
-            when: 'beforeChildren'
-        }
-    }
+            when: 'beforeChildren',
+        },
+    },
 };
 
 const item = {
     hidden: {
         opacity: 0,
-        x: -100
+        x: -100,
     },
     visible: {
         opacity: 1,
-        x: 0
-    }
+        x: 0,
+    },
 };
 
 const WhyNextSection = () => {
@@ -84,26 +84,25 @@ const WhyNextSection = () => {
                         <span>{'Next.js?'}</span>
                     </Title>
                     <Description>
-                        {'Companies all over the world are using '}
                         <A href="https://nextjs.org/" underline>
                             {'Next.js'}
                         </A>
                         {
-                            ' to build performant, scalable applications. This course will teach you the skills necessary to build best-in-class React applications.'
+                            " is the React framework that evolves with your product. It's unique among front-end frameworks because it seamlessly allows developers to grow from static sites to server-rendered sites as requirements change."
                         }
                     </Description>
                     <FeatureList>
                         <Feature>
                             <CheckIcon alt="Checkmark" src="/images/check.svg" />
-                            {'Zero-Config Setup'}
-                        </Feature>
-                        <Feature>
-                            <CheckIcon alt="Checkmark" src="/images/check.svg" />
-                            {'Fully Extensible'}
+                            {'Static Sites'}
                         </Feature>
                         <Feature>
                             <CheckIcon alt="Checkmark" src="/images/check.svg" />
                             {'Server-Side Rendering'}
+                        </Feature>
+                        <Feature>
+                            <CheckIcon alt="Checkmark" src="/images/check.svg" />
+                            {'Pre-Rendering'}
                         </Feature>
                     </FeatureList>
                 </Column>
