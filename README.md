@@ -35,6 +35,7 @@ The premiere video course for building production, server-side rendered applicat
 
 ## [Fetching Data](/course/fetching-data)
 
+-   Static Sites with Next.js 9.3
 -   Custom Server
 -   Node.js & API Routes
 -   GraphQL ([daydrink](https://github.com/leerob/daydrink))
