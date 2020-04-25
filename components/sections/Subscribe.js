@@ -1,17 +1,8 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 import {Button} from '../shared';
-
-const Section = styled.section`
-    background-color: #2a2d3c;
-    color: white;
-    padding: 8px 24px;
-
-    @media screen and (min-width: 1000px) {
-        padding: 8px 80px 32px 80px;
-    }
-`;
 
 const Input = styled.input`
     border-radius: 8px;
@@ -30,25 +21,11 @@ const Input = styled.input`
     }
 `;
 
-const P = styled.p`
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    padding: 24px;
-    margin: 0 auto 16px;
-    max-width: 500px;
-
-    @media screen and (min-width: 800px) {
-        max-width: 100%;
-        margin: 16px auto;
-    }
-`;
-
 const Form = styled.form`
     max-width: 500px;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     flex-direction: column;
 
     @media screen and (min-width: 484px) {
@@ -56,16 +33,58 @@ const Form = styled.form`
     }
 `;
 
-const Subscribe = () => (
-    <Section>
-        <P>{"Sign up for project updates, early previews, and to find out when it's ready."}</P>
-        <Form>
-            <Input aria-label="Email Address" name="email" placeholder="Enter your email" type="text" />
-            <Button type="submit" whileHover={{scale: 1.05}} whileTap={{scale: 0.9}}>
-                {'Subscribe'}
-            </Button>
-        </Form>
-    </Section>
-);
+const Error = styled.span`
+    font-size: 16px;
+    font-weight: 700;
+`;
+
+const Subscribe = () => {
+    const [error, setError] = useState('');
+    const inputEl = useRef(null);
+    const router = useRouter();
+
+    const subscribe = async (e) => {
+        e.preventDefault();
+
+        const req = await fetch('/api/subscribe', {
+            body: JSON.stringify({
+                email: inputEl.current.value,
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            method: 'POST',
+        });
+
+        const res = await req.json();
+
+        if (res.error) {
+            setError(res.error);
+
+            return;
+        }
+
+        inputEl.current.value = '';
+        router.push('/success');
+    };
+
+    return (
+        <>
+            <Form>
+                <Input
+                    aria-label="Email Address"
+                    name="email"
+                    placeholder="Your Email Address"
+                    ref={inputEl}
+                    type="text"
+                />
+                <Button onClick={subscribe} whileHover={{scale: 1.05}} whileTap={{scale: 0.9}}>
+                    {'Subscribe'}
+                </Button>
+            </Form>
+            <Error>{error}</Error>
+        </>
+    );
+};
 
 export default Subscribe;
