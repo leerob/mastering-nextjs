@@ -116,7 +116,8 @@ const Discount = styled.div`
 
 const Tweets = styled.div`
     padding: 16px;
-    max-width: 100%;
+    max-width: 500px;
+    width: 100%;
 `;
 
 const PaymentSection = () => (
