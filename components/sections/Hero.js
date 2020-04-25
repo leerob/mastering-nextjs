@@ -92,7 +92,7 @@ const HeroSection = () => (
                     </RatingSection>
                     <Description as="h2">
                         {
-                            'The premiere video course for building static and server-side rendered applications with Next.js and React. Sign up now to get two modules instantly!'
+                            'The premiere video course for building static and server-side rendered applications with Next.js and React. Sign up now and get two videos instantly!'
                         }
                     </Description>
                     <Subscribe />
