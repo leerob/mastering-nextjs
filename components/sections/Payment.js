@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Tweet from 'react-tweet-embed';
 
 import {Button, Small} from '../shared';
 
@@ -7,9 +8,14 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 600px;
     background: linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%),
         linear-gradient(217deg, rgba(255, 0, 0, 0.42), rgba(255, 0, 0, 0) 70.71%);
+
+    @media (min-width: 950px) {
+        flex-direction: row;
+    }
 `;
 
 const Card = styled.div`
@@ -108,8 +114,17 @@ const Discount = styled.div`
     font-weight: bold;
 `;
 
+const Tweets = styled.div`
+    padding: 16px;
+    max-width: 100%;
+`;
+
 const PaymentSection = () => (
     <Section id="buy">
+        <Tweets>
+            <Tweet id="1229862330449747969" options={{cards: 'hidden'}} />
+            <Tweet id="1247011540579958786" options={{cards: 'hidden'}} />
+        </Tweets>
         <Card>
             <CardHeader>
                 <Small>{'The Complete Package'}</Small>

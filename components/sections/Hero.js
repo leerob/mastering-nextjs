@@ -1,11 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 
-import {Button, Container, Column, CenteredColumn, Small, Title, Description} from '../shared';
+import {Container, Column, CenteredColumn, Small, Title, Description} from '../shared';
 import LogosSection from '../Logos';
 import Nav from '../Nav';
+
+import Subscribe from './Subscribe';
 
 const Section = styled.section`
     background: linear-gradient(336deg, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0) 70.71%),
@@ -27,14 +28,6 @@ const Underlined = styled(Small)`
     background-size: 120px 0.3em;
     background-repeat: no-repeat;
     background-position: 0px 100%;
-`;
-
-const EarlyAccessButton = styled(Button)`
-    width: 100%;
-
-    @media screen and (min-width: 520px) {
-        width: 280px;
-    }
 `;
 
 const LaunchBanner = styled.div`
@@ -99,14 +92,10 @@ const HeroSection = () => (
                     </RatingSection>
                     <Description as="h2">
                         {
-                            'The premiere video course for building static and server-side rendered applications with Next.js and React.'
+                            'The premiere video course for building static and server-side rendered applications with Next.js and React. Sign up now and get two videos instantly!'
                         }
                     </Description>
-                    <Link href="#buy">
-                        <EarlyAccessButton whileHover={{scale: 1.05}} whileTap={{scale: 0.9}}>
-                            {'Get Launch Price'}
-                        </EarlyAccessButton>
-                    </Link>
+                    <Subscribe />
                 </Column>
                 <CenteredColumn>
                     <LogosSection />
