@@ -124,6 +124,10 @@ const Tweets = styled.div`
   width: 100%;
 `;
 
+const trackGoal = () => {
+  window.fathom.trackGoal('RNVN6XHH', 0);
+};
+
 const PaymentSection = () => (
   <Section id="buy">
     <Tweets>
@@ -170,6 +174,7 @@ const PaymentSection = () => (
       <EarlyAccessButton
         as="a"
         href="https://gumroad.com/l/sDpG/launch"
+        onClick={() => trackGoal()}
         rel="noopener noreferrer"
         target="_blank"
         whileHover={{ scale: 1.05 }}
