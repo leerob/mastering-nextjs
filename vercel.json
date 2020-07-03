@@ -5,22 +5,27 @@
   "env": {
     "BUTTONDOWN_API_KEY": "@buttondown-api-key"
   },
-  "redirects": [
+  "routes": [
     {
-      "source": "/launch",
-      "destination": "/"
+      "src": "/learn-next-js",
+      "status": 301,
+      "headers": {
+        "Location": "https://leerob.io/blog/learn-nextjs"
+      }
     },
     {
-      "source": "learn-next-js",
-      "destination": "https://leerob.io/blog/learn-nextjs"
+      "src": "/sitemap-robots",
+      "status": 301,
+      "headers": {
+        "Location": "https://leerob.io/blog/nextjs-sitemap-robots"
+      }
     },
     {
-      "source": "sitemap-robots",
-      "destination": "https://leerob.io/blog/nextjs-sitemap-robots"
-    },
-    {
-      "source": "nextjs-gatsby-create-react-app",
-      "destination": "https://leerob.io/blog/nextjs-gatsby-create-react-app"
+      "src": "/nextjs-gatsby-create-react-app",
+      "status": 301,
+      "headers": {
+        "Location": "https://leerob.io/blog/nextjs-gatsby-create-react-app"
+      }
     }
   ]
 }
