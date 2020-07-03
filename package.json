@@ -1,6 +1,6 @@
 {
   "name": "mastering-nextjs",
-  "description": "The complete video course on Next.js.",
+  "description": "A free video course for building static and server-side rendered applications with Next.js and React.",
   "version": "0.0.0",
   "author": {
     "name": "Lee Robinson",
@@ -15,12 +15,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "imageoptim": "yarn imageoptim:gif && yarn imageoptim:jpg && yarn imageoptim:png",
-    "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
-    "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
-    "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
     "lint": "eslint . --ext .json --ext .js",
-    "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\"",
+    "prettier": "prettier --write \"**/*.{html,js,md,yml}\"",
     "start": "next start",
     "test": "yarn lint"
   },
@@ -30,54 +26,30 @@
     }
   },
   "lint-staged": {
-    "*.{html,js,json,md,mdx,mjs,yml}": [
+    "*.{html,js,md,yml}": [
       "prettier --write",
-      "git add"
-    ],
-    "*.gif": [
-      "imageoptim",
-      "git add"
-    ],
-    "*.jpg": [
-      "imageoptim",
-      "git add"
-    ],
-    "*.png": [
-      "imageoptim --no-imageoptim --imagealpha",
       "git add"
     ]
   },
   "dependencies": {
-    "@mapbox/rehype-prism": "0.4.0",
-    "@mdx-js/mdx": "1.6.1",
-    "@mdx-js/tag": "0.20.3",
-    "comma-number": "2.0.1",
-    "date-fns": "1.30.1",
-    "framer-motion": "1.11.0",
-    "globby": "^11.0.0",
-    "isomorphic-unfetch": "3.0.0",
-    "next": "9.4.1",
-    "next-seo": "^4.5.0",
+    "@chakra-ui/core": "0.7.0",
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "@mdx-js/loader": "^1.6.6",
+    "@mdx-js/react": "^1.6.6",
+    "@next/mdx": "^9.4.4",
+    "emotion-theming": "10.0.27",
+    "next": "9.4.0",
+    "next-seo": "4.4.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-intersection-observer": "8.26.2",
-    "react-syntax-highlighter": "12.2.1",
-    "react-tweet-embed": "^1.2.2",
-    "styled-components": "5.1.0",
-    "styled-reset": "4.1.4",
-    "swr": "^0.2.0",
-    "title": "3.4.2"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@zeit/next-mdx": "1.2.0",
-    "babel-plugin-inline-react-svg": "1.1.1",
-    "babel-plugin-styled-components": "1.10.7",
-    "eslint": "7.0.0",
-    "eslint-config-get-off-my-lawn": "^5.0.1",
-    "husky": "4.2.5",
-    "imageoptim-cli": "3.0.2",
-    "lint-staged": "10.1.7",
-    "prettier": "2.0.5"
+    "eslint": "6.8.0",
+    "eslint-config-get-off-my-lawn": "5.0.1",
+    "globby": "11.0.0",
+    "husky": "4.2.3",
+    "lint-staged": "10.1.2",
+    "prettier": "2.0.2"
   }
 }

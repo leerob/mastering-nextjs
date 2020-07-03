@@ -2,7 +2,7 @@
 .DS_Store
 .next
 node_modules
-.env*
+.env.local
 public/sitemap.xml
+.vercel
 course/**/yarn.lock
-.now
