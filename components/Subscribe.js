@@ -44,7 +44,7 @@ const Subscribe = () => {
       return;
     }
 
-    window.fathom.trackGoal('TODO', 0);
+    window.fathom.trackGoal('81HSEDDL', 0);
     inputEl.current.value = '';
     toast({
       title: 'Success!',
