@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
   "env": {
     "BUTTONDOWN_API_KEY": "@buttondown-api-key"
   },
