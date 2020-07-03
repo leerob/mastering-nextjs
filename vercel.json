@@ -9,18 +9,6 @@
     {
       "source": "/launch",
       "destination": "/"
-    },
-    {
-      "source": "learn-next-js",
-      "destination": "https://leerob.io/blog/learn-nextjs"
-    },
-    {
-      "source": "sitemap-robots",
-      "destination": "https://leerob.io/blog/nextjs-sitemap-robots"
-    },
-    {
-      "source": "nextjs-gatsby-create-react-app",
-      "destination": "https://leerob.io/blog/nextjs-gatsby-create-react-app"
     }
   ]
 }
