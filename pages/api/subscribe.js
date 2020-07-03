@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch';
-
 export default async (req, res) => {
   const { email } = req.body;
 
@@ -14,7 +12,7 @@ export default async (req, res) => {
       {
         body: JSON.stringify({
           email,
-          tags: ['Mastering Next.js']
+          tags: ['react2025']
         }),
         headers: {
           Authorization: `Token ${API_KEY}`,
