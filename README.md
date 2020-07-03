@@ -2,7 +2,7 @@
 
 > A free video course for building static and server-side rendered applications with Next.js and React.
 
-Looking for the old course site? [Look no further!](https://github.com/leerob/mastering-nextjs-old-site).
+Looking for the old course site? [Look no further!](https://github.com/leerob/mastering-nextjs-old-site)
 
 ## Course
 
