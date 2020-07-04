@@ -111,7 +111,7 @@ const Index = () => (
               color="white"
               _hover={{ bg: 'black' }}
             >
-              Watch Now ->
+              Watch Now →
             </Button>
           </Flex>
         </Stack>
