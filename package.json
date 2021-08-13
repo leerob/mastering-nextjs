@@ -39,7 +39,7 @@
     "@mdx-js/react": "^1.6.6",
     "@next/mdx": "^9.4.4",
     "emotion-theming": "10.0.27",
-    "next": "9.4.0",
+    "next": "11.1.0",
     "next-seo": "4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
