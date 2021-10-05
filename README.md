@@ -33,7 +33,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 - 🟢 `next dev`, `next build`, and `next start`
 - 🟢 Prettier
 - 🟡 Image Optimization is [now supported in Next.js](https://nextjs.org/docs/basic-features/image-optimization)
-- 🔴 ESLint is [now integrated in Next.js](https://nextjs.org/docs/basic-features/eslint)
+- 🟡 ESLint is [now integrated in Next.js](https://nextjs.org/docs/basic-features/eslint)
 - 🔴 Standard (Prettier + ESLint won)
 
 ## Navigating Between Pages
