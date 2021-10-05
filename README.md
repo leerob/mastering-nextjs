@@ -52,8 +52,8 @@ I taught Class Components in 2019 for those still in the process of converting t
 - 🟢 Responsive + Mobile-First Design
 - 🟢 styled-jsx
 - 🟡 CSS & CSS Modules are now supported out of the box
-- 🔴 Sass - Personally, I would recommend [other options](https://leerob.io/blog/css-with-react)
-- 🔴 Styled-Components - Personally, I would recommend [other options](https://leerob.io/blog/css-with-react)
+- 🔴 Sass - I would recommend [other options](https://leerob.io/blog/css-with-react)
+- 🔴 Styled-Components - I would recommend [other options](https://leerob.io/blog/css-with-react)
 
 ## Fetching Data
 
@@ -80,7 +80,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 - [**🎥 Watch Lesson (32:32)**](https://www.youtube.com/watch?v=dsCfi0yRr1w&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
 - [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/mdx)
 - 🟢 MDX vs CMS
-- 🟡 Component Library (Theme UI) – Personally, I would recommend [other options](https://leerob.io/blog/css-with-react)
+- 🟡 Component Library (Theme UI) – I would recommend [other options](https://leerob.io/blog/css-with-react)
 - 🔴 StaticKit – Acquired by [Formspree](https://formspree.io/)
 
 ## Authentication
