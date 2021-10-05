@@ -1,55 +1,20 @@
 {
-  "name": "mastering-nextjs",
-  "description": "A free video course for building static and server-side rendered applications with Next.js and React.",
-  "version": "0.0.0",
-  "author": {
-    "name": "Lee Robinson",
-    "email": "me@leerob.io",
-    "url": "https://leerob.io"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leerob/mastering-nextjs.git"
-  },
+  "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
-    "dev": "next",
-    "lint": "eslint . --ext .json --ext .js",
-    "prettier": "prettier --write \"**/*.{html,js,md,yml}\"",
     "start": "next start",
-    "test": "yarn lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{html,js,md,yml}": [
-      "prettier --write",
-      "git add"
-    ]
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/core": "0.7.0",
-    "@emotion/core": "10.0.28",
-    "@emotion/styled": "10.0.27",
-    "@mdx-js/loader": "^1.6.6",
-    "@mdx-js/react": "^1.6.6",
-    "@next/mdx": "^9.4.4",
-    "emotion-theming": "10.0.27",
-    "next": "9.4.0",
-    "next-seo": "4.4.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "highlight.js": "^11.2.0",
+    "marked": "^3.0.4",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "eslint": "6.8.0",
-    "eslint-config-get-off-my-lawn": "5.0.1",
-    "globby": "11.0.0",
-    "husky": "4.2.3",
-    "lint-staged": "10.1.2",
-    "prettier": "2.0.2"
+    "eslint": "7.32.0",
+    "eslint-config-next": "latest"
   }
 }
