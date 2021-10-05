@@ -19,7 +19,7 @@ I've updated the course overview below to annotate which parts are up to date, w
 I taught Class Components in 2019 for those still in the process of converting to React Hooks. In 2021, it's now standard to use React Hooks for all projects and I would recommend starting there.
 
 - [**🎥 Watch Lesson (21:01)**](https://www.youtube.com/watch?v=cahFm8eeeJI&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
-- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/master/course/react)
+- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/react)
 - 🟢 Props & State
 - 🟢 Functional Components
 - 🟢 React Hooks
@@ -39,7 +39,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 ## Navigating Between Pages
 
 - [**🎥 Watch Lesson (19:25)**](https://www.youtube.com/watch?v=ERUHYh_65F4&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
-- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/master/course/navigation)
+- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/navigation)
 - 🟢 `next/link` (client-side routing)
 - 🟢 `useRouter`
 - 🟢 Retrieving data from URLs
@@ -48,7 +48,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 ## Styling
 
 - [**🎥 Watch Lesson (20:04)**](https://www.youtube.com/watch?v=2t6y-bDIe0Y&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
-- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/master/course/styling)
+- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/styling)
 - 🟢 Responsive + Mobile-First Design
 - 🟢 styled-jsx
 - 🟡 CSS & CSS Modules are now supported out of the box
@@ -58,7 +58,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 ## Fetching Data
 
 - [**🎥 Watch Lesson (46:30)**](https://www.youtube.com/watch?v=0UjtqQGLMks&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
-- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/master/course/fetching-data)
+- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/fetching-data)
 - 🟢 API Routes
 - 🟢 [SWR](https://swr.vercel.app)
 - 🟢 GraphQL
@@ -78,7 +78,7 @@ I taught Class Components in 2019 for those still in the process of converting t
 ## Building A Blog With MDX
 
 - [**🎥 Watch Lesson (32:32)**](https://www.youtube.com/watch?v=dsCfi0yRr1w&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR)
-- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/master/course/mdx)
+- [**👀 View Code**](https://github.com/leerob/mastering-nextjs/tree/main/course/mdx)
 - 🟢 MDX vs CMS
 - 🟡 Component Library (Theme UI) – Personally, I would recommend [other options](https://leerob.io/blog/css-with-react)
 - 🔴 StaticKit – Acquired by [Formspree](https://formspree.io/)

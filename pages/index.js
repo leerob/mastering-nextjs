@@ -39,7 +39,7 @@ export default function Home({ content }) {
 
 export async function getStaticProps() {
   const rawContent = await fetch(
-    'https://raw.githubusercontent.com/leerob/mastering-nextjs/master/README.md'
+    'https://raw.githubusercontent.com/leerob/mastering-nextjs/main/README.md'
   );
   const markdown = await rawContent.text();
 
